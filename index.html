@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="nav"> <!--Navegação-->
+        <div class="icon-menu"><i class='bx bx-menu'></i></div>
+        <div class="logo"><h1 class="logo__text">Desenvolvedor Front End</h1> <span class="logo__icon"><i class='bx bx-expand-horizontal'></i></span></div>
+        <ul class="nav__lista">
+            <li class="nav__item"><a class="nav__link" href="#main">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#sobre">Sobre</a></li>
+            <li class="nav__item"><a class="nav__link" href="#projeto">Projetos</a></li>
+            <li class="nav__item"><a class="nav__link" href="https://github.com/DevM-Garcia" target="_blank" class="navegaçao__link"><i class='bx bxl-github'></i></a></li>
+            <li class="nav__item" ><a class="nav__link" href="https://www.linkedin.com/in/matheus-garcia-martins/" target="_blank" class="navegaçao__link"><i class='bx bxl-linkedin-square'></i></a></li>
+        </ul>
+    </header>               <!--final // Navegação-->
+
+    <main id="main">                        <!--Main-->
+        <div class="home">
+            <div class="home__text">
+                <h2>Olá</h2>
+                <h3>Eu sou o Matheus</h3>
+                <h2>Desenvolvedor Front end</h2><span class="home-span"><i class='bx bx-expand-horizontal'></i></span> 
+                <ul class="home__icons">
+                    <li class="home__item">
+                            <a href="https://github.com/DevM-Garcia" target="_blank" class="home__link"><i class='bx bxl-github'></i></a>
+                    </li>
+
+                    <li class="home__item">
+                            <a href="https://www.linkedin.com/in/matheus-garcia-martins/" target="_blank" class="home__link"><i class='bx bxl-linkedin-square'></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="home-img">
+            <img class= "home__img"src="/img/avatar.png" alt="Imagem do meu avatar">
+        </div>
+    </main>                      <!--Main-->
+
+                                <!--Sobre-->
+    <section class="sobre" id="sobre">
+        <h2 class="titulo">Sobre <span class="sobre-span"><i class='bx bx-expand-horizontal'></i></span></h2>
+        <div class="sobre__conteudo">
+            <div class="sobre__img">
+                <img class="img__sobre" src="/img/minha foto.jpeg" alt="foto minha">
+            </div>
+            <div class="sobre__text">
+                <div class="sobre__text-sobre">
+                    <h2 class="sobre__titulo-sobre">Sobre mim...</h2>
+                    <p>Olá, me chamo Matheus (como ja deve ter visto um pouco acima hehe), tenho 26 anos e comecei minha carreira na área de TI digamos que a pouco tempo, afinal, são apenas 8 meses entre cursinhos e faculdade. <br/>
+                    No momento estou cursando o  segundo semestre de Análise e Desenvolvimento de Sistemas, e pratico programação no cursinho da Alura.
+                    Estou a procura de meu primeiro emprego, seja ele treinee,estágio ou efetivo !! Porque não me convida para um cafézinho ?! <br/>
+                    </p>
+                </div>
+                <div class="sobre__text-redes">
+                    <h2 class="sobre__titulo">Redes sociais</h2>
+                    <ul class="sobre__lista">
+                        <li><a href="https://github.com/DevM-Garcia" target="_blank"><i class='bx bxl-github'></i></a></li>
+                        <li>
+                        <li><a href="https://www.linkedin.com/in/matheus-garcia-martins/" target="_blank"><i class='bx bxl-linkedin-square'></i></a></li>
+                        <li>
+                            <a href="https://www.instagram.com/matheusgreeg/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="sobre__titulo">Habilidades que ofereço</h2>
+                <ul class="sobre__lista">
+                    <li><a href="#"><i class='bx bxl-html5'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-css3'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-javascript'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-git'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-github'></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>                  <!--Final / Sobre-->
+
+    <section class="projetos" id="projeto"> <!--Projetos-->
+        <h2 class="projetos__titulo">Projetos <span class="sobre-span"><i class='bx bx-expand-horizontal'></i></span></h2>
+            <div class="container__projetos">
+                <div class="card">
+                    <h2 class="card-titulo">Acadêmicos</h2>
+                    <div class="box">
+                        <p>projetos academicos</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-titulo">Particulares</h2>
+                    <div class="box">
+                        <p>Projetos pessoais</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+            
+                </div>
+                <div class="card">
+                    <h2 class="card-titulo">Trabalhos</h2>
+                    <div class="box">
+                        <p>Trabalhos realizados</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+    </section> <!--final // projetos-->
+
+    <footer>
+        <h2 class="rodape">Produzido por Matheus Garcia <span class="sobre-span"><i class='bx bx-expand-horizontal'></i></span></h2>
+    </footer>
+</body>
+</html>
