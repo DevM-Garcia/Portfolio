@@ -11,6 +11,7 @@
     --cor-de-fundo:#d6d6d67a;
     --preto:#111;
     --cor-secundaria:#c7c41d;
+    --cor-secundaria-transparent:#c7c41d93;
     --branco:#f3f1f1;
     --fonte-principal:'Ubuntu', sans-serif;
 }
@@ -29,16 +30,25 @@ header{
     gap: 200px;
 }
 .nav.sticky{
-    background: var(--cor-secundaria);
+    background: var(--cor-secundaria-transparent);
     padding: 15px 0;
-    color: var(--preto);
+    border: none;
 }
 .nav .logo span {
     color: var(--cor-secundaria);
 }
 .nav.sticky .logo__icon{
     color: #fff;
-    
+}
+.nav.sticky .nav__link{
+    color: var(--preto);
+    transition: all 0.3s ease;
+}
+.nav.sticky .nav__link:hover{
+    color: var(--branco);
+}
+.nav.sticky .logo{
+    color: var(--preto);
 }
 .nav{
     display: flex;
