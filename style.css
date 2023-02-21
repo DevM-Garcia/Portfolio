@@ -33,7 +33,7 @@ header{
     padding: 15px 0;
     color: var(--preto);
 }
-.nav .logo a span {
+.nav .logo span {
     color: var(--cor-secundaria);
 }
 .nav.sticky .logo__icon{
