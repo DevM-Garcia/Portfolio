@@ -27,6 +27,17 @@ header{
     border-bottom: 1px solid var(--branco);
     gap: 200px;
 }
+.nav.sticky{
+    background: var(--cor-secundaria);
+    padding: 15px 0;
+}
+.nav .logo a span {
+    color: var(--cor-secundaria);
+}
+.nav.sticky .logo__icon{
+    color: #fff;
+    transition: all 0.3s ease;
+}
 .nav{
     display: flex;
     text-align: center;
