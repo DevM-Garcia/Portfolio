@@ -31,6 +31,7 @@ header{
 .nav.sticky{
     background: var(--cor-secundaria);
     padding: 15px 0;
+    color: var(--preto);
 }
 .nav .logo a span {
     color: var(--cor-secundaria);
