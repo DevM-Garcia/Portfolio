@@ -25,6 +25,7 @@ header{
     width: 100%;
     padding: 30px 0;
     border-bottom: 1px solid var(--branco);
+    transition: all 0.3s ease;
     gap: 200px;
 }
 .nav.sticky{
@@ -36,7 +37,7 @@ header{
 }
 .nav.sticky .logo__icon{
     color: #fff;
-    transition: all 0.3s ease;
+    
 }
 .nav{
     display: flex;
