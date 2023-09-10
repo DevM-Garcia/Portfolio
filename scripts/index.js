@@ -24,7 +24,29 @@ const swiper = new Swiper('.swiper', {
 
 // animaçao do botão do menu
 
+
 function animar() {
+
     const btn = document.getElementById('btn-menu');
     btn.classList.toggle('ativar');
+
+};
+
+const btnMod = document.querySelector('.btn-mod');
+const main = document.querySelector('main');
+
+btnMod.onclick = function () {
+    this.classList.toggle('active')
+
 }
+
+
+
+
+
+
+
+
+
+
+
