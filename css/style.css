@@ -75,13 +75,66 @@ body::-webkit-scrollbar-thumb {
 
 .nav-list a {
     cursor: pointer;
-    color: black;
+    color: var(--black);
+    transition: all ease .4s;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-list a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--black);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-list a:hover::after {
+    width: 100%;
+}
+
+.btn-menu {
+    display: none;
+    width: 45px;
+    height: 35px;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    background: var(--bg-color);
+    position: relative;
+    transform-origin: center;
     transition: all ease .4s;
 }
 
-.nav-list a:hover {
-    color: rgba(0, 0, 0, 0.64);
+.btn-menu.ativar .linha:nth-child(1) {
+    transform: translateY(10px) rotate(-55deg);
 }
+
+.btn-menu.ativar .linha:nth-child(3) {
+    transform: translateY(-10px) rotate(55deg);
+}
+
+.btn-menu.ativar .linha:nth-child(2) {
+    width: 0;
+}
+
+.linha {
+    width: 29px;
+    height: 3.5px;
+    background: var(--black);
+    display: block;
+    margin: 5px auto;
+    position: relative;
+    right: 3px;
+    bottom: 10px;
+    transition: all ease .4s;
+}
+
+/* .nav-list a:hover {
+    color: rgba(0, 0, 0, 0.64);
+} */
 
 /* home */
 
@@ -109,6 +162,18 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50%;
 }
 
+.btn-link {
+    padding: 0.9rem;
+    width: 50px;
+    border-radius: 30%;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    background: #7700ffc8;
+}
+
 @keyframes float {
 
     0%,
@@ -129,7 +194,21 @@ body::-webkit-scrollbar-thumb {
     text-align: justify;
 }
 
-button {
+.home-position {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.home-resume {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2PX;
+    opacity: .8;
+}
+
+.contact {
     border: none;
     width: 150px;
     padding: 10px;
@@ -142,11 +221,11 @@ button {
     transition: all .4s ease;
 }
 
-button a {
+.contact a {
     color: #fff;
 }
 
-button:hover {
+.contact:hover {
     background-color: #7700ffab;
 }
 
@@ -240,17 +319,61 @@ footer {
 
 /* responsivo */
 
+@media (max-width : 782px) {
+    header {
+        justify-content: center;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .home-info,
+    .home-img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .img-avatar {
+        width: 50%;
+        position: relative;
+        top: 80px;
+    }
+
+    .swiper-slide {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+    .project-info {
+        width: 80%;
+    }
+}
+
 @media (max-width : 450px) {
     header {
         justify-content: center;
     }
 
-    nav {
-        justify-content: center;
+    .nav-list {
+        display: none;
     }
 
-    .logo {
-        display: none;
+    .btn-menu {
+        display: block;
     }
 
     #home {

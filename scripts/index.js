@@ -21,3 +21,10 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
+
+// animaçao do botão do menu
+
+function animar() {
+    const btn = document.getElementById('btn-menu');
+    btn.classList.toggle('ativar');
+}
