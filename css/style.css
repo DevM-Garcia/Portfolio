@@ -153,17 +153,23 @@ img {
 
 /* sobre */
 
-.sobre {
+.sobre,
+.projetos,
+.contato {
     color: var(--cor-da-font);
     padding: 50px 20px;
 }
 
-.sobre .container-sobre {
+.sobre .container-sobre,
+.projetos .container-projetos,
+.contato .container-contato {
     max-width: 1100px;
     margin: auto;
 }
 
-.sobre h2 {
+.sobre h2,
+.projetos h2,
+.contato h2 {
     font-size: 42px;
     font-family: var(--font-alternativa);
     text-align: center;
@@ -218,7 +224,8 @@ img {
     font-size: 1.2rem;
 }
 
-.btn-download {
+.btn-download,
+.btn-msg {
     cursor: pointer;
     background-color: transparent;
     border: px solid #fff;
@@ -245,4 +252,139 @@ img {
 
 .btn-download:hover .overlay {
     width: 100%;
+}
+
+/* projetos */
+
+.container-projetos .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-projetos .box .box-projeto {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.container-projetos .box .box-projeto img {
+    width: 100%;
+    display: block;
+}
+
+.container-projetos .box-projeto .overlay {
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    height: 82%;
+    text-align: center;
+    background: #d9a036f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    border-radius: 3rem;
+    opacity: 0;
+}
+
+.container-projetos .box-projeto .overlay a {
+    color: var(--cor-da-font);
+    margin-top: 30px;
+    transition: .4s;
+    font-size: 0.8rem;
+}
+
+.container-projetos .box-projeto .overlay a:hover {
+    color: #111;
+}
+
+.container-projetos .box-projeto .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.container-projetos .box-projeto .overlay:hover {
+    opacity: 1;
+}
+
+.container-projetos .box-projeto .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+/* contato */
+.contato {
+    background-image: url(/IMG/contact_bg.png);
+    padding: 50px 0;
+}
+
+.contato .fila {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contato .fila .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contato .fila .col img {
+    position: relative;
+    bottom: 50px;
+    width: 90%;
+    height: 10%;
+}
+
+.contato .fila .col input,
+.contato .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252a2e;
+    color: var(--cor-da-font);
+    font-size: 18px;
+}
+
+.btn-msg .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--yellow);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btn-msg:hover .overlay {
+    width: 100%;
+}
+
+.contato .col .info {
+    position: absolute;
+    top: 25%;
+    background-color: #252a2e;
+    border-radius: 1rem;
+    padding: 20px;
+    max-width: 350px;
+    left: 17%;
+    transform: translate((-50%, -50%));
+}
+
+.contato .col .info li {
+    margin-bottom: 20px;
+}
+
+.contato .col .info li i {
+    color: var(--yellow);
+    display: inline-block;
+    margin-right: 20px;
 }
