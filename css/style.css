@@ -97,6 +97,7 @@ header {
 /* inicio */
 
 .inicio {
+    margin-top: 3rem;
     background: var(--bg-color);
     height: 100vh;
     display: flex;
@@ -148,4 +149,100 @@ img {
 
 .banner .redes :hover {
     background-color: var(--yellow);
+}
+
+/* sobre */
+
+.sobre {
+    color: var(--cor-da-font);
+    padding: 50px 20px;
+}
+
+.sobre .container-sobre {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobre h2 {
+    font-size: 42px;
+    font-family: var(--font-alternativa);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobre p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobre p span {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+.sobre .fila {
+    display: flex;
+}
+
+.sobre .fila .col {
+    width: 50%;
+}
+
+.sobre .fila .col ul li {
+    margin: 12px 0;
+}
+
+.sobre .fila .col ul li strong {
+    display: inline-block;
+    color: var(--yellow);
+    width: 130px;
+}
+
+.sobre .fila .col .box-skills {
+    display: flex;
+    gap: 2rem;
+}
+
+.sobre .fila .col .box-skills .col-skills li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.sobre .fila .col ul li i {
+    display: inline-block;
+    color: var(--yellow);
+    width: 130px;
+    font-size: 1.2rem;
+}
+
+.btn-download {
+    cursor: pointer;
+    background-color: transparent;
+    border: px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-download .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--yellow);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btn-download:hover .overlay {
+    width: 100%;
 }
