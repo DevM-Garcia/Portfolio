@@ -1,132 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Portfólio</title>
-    <!-- biblioteca carrousel -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <!-- link boxicon -->
+    <title>Web Matheus Garcia</title>
+
+    <!-- importando css -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- importando boxicon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- link css -->
-    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <main>
-        <!-- header -->
-        <header class="cabecalho">
-            <div class="logo">G<span class="logo-span">code</span></div>
-            <div class="menu">
-                <button onclick="animar()" class="btn-menu" id="btn-menu">
-                    <span class="linha"></span>
-                    <span class="linha"></span>
-                    <span class="linha"></span>
-                </button>
-                <nav class="nav-list" id="nav-list">
-                    <a href="#home">Home</a>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#contato">Contato</a>
-                    <a href="https://github.com/DevM-Garcia" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                </nav>
-            </div>
-            <nav class="nav-list-mobile">
-                <a href="#home">Home</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#contato">Contato</a>
-                <a href="https://github.com/DevM-Garcia" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/feed/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-            </nav>
-        </header>
-        <div class="btn-mod">
-            <div class="mod">
-
-            </div>
+    <header id="Inicio">
+        <div class="logo">
+            Matheus Garcia <span class="icon-span"><i class='bx bx-code-alt'></i></span>
         </div>
-        <!-- home -->
-        <section id="home">
-            <div class="home-info">
-                <h2> Olá, sou Matheus Garcia</h2>
-                <span class="home-position">Programador Front-End</span>
-                <span class="home-resume">
-                    Estudante de tecnologia,
-                    tenho experiência em desenvolvimento Web
-                    , mobile e criação de site
-                </span>
-                <div class="box-buttons">
-                    <button class="contact">
-                        <a href="#contato">Contate-me</a>
-                    </button>
-                    <button class="btn-link"><a href="https://github.com/DevM-Garcia" target="_blank"><i
-                                class='bx bxl-github'></i></a></button>
-                    <button class="btn-link"><a href="https://www.linkedin.com/feed/" target="_blank"><i
-                                class='bx bxl-linkedin-square'></i></a></button>
-                </div>
-            </div>
-
-            <div class="img-home">
-                <img class="img-avatar" src="/img/avatar.png" alt="">
-            </div>
-        </section>
-
-        <!-- projetos -->
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="project-img">
-                            <img src="img/project-1.jpg" alt="">
-                        </div>
-                        <div class="project-info">
-                            <h2>E-commerce</h2>
-                            <p>criação de sites online</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="project-img">
-                            <img src="img/project-2.jpg" alt="">
-                        </div>
-                        <div class="project-info">
-                            <h2>Landing page</h2>
-                            <p>criação de landing page para sua empresa</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="project-img">
-                            <img src="img/project-3.jpg" alt="">
-                        </div>
-                        <div class="project-info">
-                            <h2>Aplicações</h2>
-                            <p>criação de aplicações</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </section>
-
-        <section id="contato">
-            <h2>Contato</h2>
-            <form>
-                <input type="text" placeholder="Digite seu nome" name="" id="">
-                <input type="text" placeholder="Digite seu e-mail" name="" id="">
-                <textarea name="" id="" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
-            </form>
-            <button>Enviar</button>
-        </section>
-
-        <footer>
-            copyright &copy; 2023 Matheus Garcia
-        </footer>
-    </main>
-
-    <!-- script do carrousel -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="/scripts/index.js"></script>
+        <nav class="nav-header">
+            <ul class="lista-header">
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="btn-mobile">
+            <i class='bx bx-menu'></i>
+        </button>
+    </header>
 </body>
 
 </html>
