@@ -23,6 +23,14 @@ html {
     background-color: var(--main-color);
 }
 
+/* grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
 /* formatação do sroll */
 
 ::-webkit-scrollbar {
@@ -43,7 +51,7 @@ html {
 :root {
 
     /* cores */
-    --main-color: #ff7b00ea;
+    --main-color: #6C63FF;
     --seconde-color: #ffe0c3ea;
     --tittle-color: #222;
     --suntitle-color: #8d8d8d;
@@ -61,6 +69,7 @@ header {
     width: 100%;
     padding: 20px 0;
     z-index: 1000;
+    height: 10vh;
 }
 
 header .container {
@@ -188,4 +197,17 @@ header .container {
     .close_icon {
         display: block;
     }
+}
+
+.hero {
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+}
+
+.hero_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
 }
